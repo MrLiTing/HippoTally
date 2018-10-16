@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">hippotally</string>
+    <string name="str_register">register</string>
+    <!--register view-->
+    <string name="alert_input_username">please input your username</string>
+    <string name="alert_input_password">please input your password</string>
+    <string name="alert_confirm_password">please confirm your password</string>
 </resources>

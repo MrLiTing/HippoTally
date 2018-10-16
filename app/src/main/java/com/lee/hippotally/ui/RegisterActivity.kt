@@ -13,7 +13,10 @@ import com.lee.hippotally.R
 import com.lee.hippotally.bean.User
 import com.lee.hippotally.const.Const
 
-class MainActivity : AppCompatActivity(),View.OnClickListener{
+/**
+ * 注册页面Activity
+ */
+class RegisterActivity : AppCompatActivity(),View.OnClickListener{
 
     private lateinit var etUserName :EditText
     private lateinit var etPassWord :EditText
@@ -37,7 +40,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener{
         var saveListener:SaveListener<String>
         user.save(object : SaveListener<String>(){
             override fun done(p0: String?, p1: BmobException?) {
-                 Toast.makeText(this@MainActivity,p0,Toast.LENGTH_LONG)
+                 Toast.makeText(this@RegisterActivity,p0,Toast.LENGTH_LONG)
             }
         })
     }
